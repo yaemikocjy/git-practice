@@ -1,6 +1,6 @@
 def greet(name):
     """跟用户打招呼"""
-    return f"Hello {name}!"
+    return f"Hey {name}!"
 
 def farewell(name):
     """跟用户道别"""
