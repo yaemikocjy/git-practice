@@ -2,6 +2,11 @@ def greet(name):
     """跟用户打招呼"""
     return f"Hey {name}!"
 
+def welcome_users(new_users):
+    """欢迎所有新用户"""
+    for user in new_users:
+        print(f"Welcome {user}! 欢迎加入！")
+
 def farewell(name):
     """跟用户道别"""
     return f"Goodbye {name}! See you next time!"
@@ -14,5 +19,8 @@ def greet_users(users):
 if __name__ == "__main__":
     print("--- 欢迎使用 Git 练习项目 ---")
     greet_users(["Alice", "Bob", "Charlie"])
+    print("--- 新增 welcome 功能 ---")
+    welcome_users(["NewUser", "NewUser2"])
+
     print("--- 同事A 加了 farewell 功能 ---")
     print(farewell("Alice"))
